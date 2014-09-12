@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /offres/*/preview
+Disallow: /*?*from=*
+Disallow: /sale/twitter/*

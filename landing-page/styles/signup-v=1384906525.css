@@ -1,0 +1,387 @@
+/*---------------------------------------------------------
+        =STRUCTURE
+-------------------------------------------------------- */
+
+/*---------------------------------------------------------
+        =SIGN UP PAGE
+-------------------------------------------------------- */
+
+/*
+        @Tags
+-------------------------------------------------------- */
+
+#signup h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    line-height: 22px;
+    max-width: 240px;
+}
+
+#signup a {
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+#signup .bt-content {
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e3e1e1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e3e1e1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e3e1e1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e3e1e1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e3e1e1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e3e1e1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3e1e1',GradientType=0 ); /* IE6-9 */
+    color: #4f4747;
+    padding: 7px 10px !important;
+}
+
+#signup .bt-content.error {
+    padding: 6px 7px 6px 7px !important;
+    margin:2px 0px 0 2px !important;;
+    width: 213px !important;
+}
+
+#signup .bt-content a {
+    color: #4F4747;
+    text-decoration: underline;
+}
+
+/*
+        @Sections
+-------------------------------------------------------- */
+
+#signup {
+    background: #4F4747 url("../images/signup_background.png");
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    height: 550px;
+    width: 1000px;
+}
+
+#signup #part_image {
+    background: #4F4747 url("../images/signup_background_image.jpg");
+    float: left;
+    height: 550px;
+    width: 633px;
+}
+
+#signup #part_image #logo {
+    background: url("../images/signup_logo.png") no-repeat;
+    height: 57px;
+    margin: 22px auto 0;
+    width: 283px;
+}
+
+#signup #part_form {
+    float: left;
+    height: 550px;
+    padding-left: 30px;
+    position: relative;
+    width: 337px;
+}
+
+#signup #part_form #languages {
+    border-bottom: 1px solid #4f4747;
+    border-left: 1px solid #4f4747;
+    color: #fff;
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    right:0;
+    text-align: right;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#signup #part_form #languages img {
+    margin: 0 5px 2px;
+    vertical-align: middle;
+}
+
+#signup #part_form #languages_menu {
+    background: #4f4747;
+    box-shadow: 0 0 6px #222;
+    display: none;
+    padding: 30px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:129px;
+    z-index: 1;
+}
+
+#signup #part_form #languages_menu a {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+#signup #part_form #languages_menu a:hover {
+    background-color: #595353;
+}
+
+#signup #part_form input {
+    border: 0;
+    border-radius: 3px;
+    margin: 0;
+}
+
+#signup #part_form input[type=text],
+#signup #part_form input[type=number],
+#signup #part_form input[type=tel],
+#signup #part_form input[type=email],
+#signup #part_form input[type=password] {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 172px;
+    text-indent: 5px;
+    -moz-box-shadow: inset 3px 3px 3px 0px #c1c1c1;
+    -webkit-box-shadow: inset 3px 3px 3px 0px #c1c1c1;
+    -o-box-shadow: inset 3px 3px 3px 0px #c1c1c1;
+    box-shadow: inset 3px 3px 3px 0px #c1c1c1;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#c1c1c1, Direction=135, Strength=3);
+}
+
+#signup #part_form input[type=checkbox] {
+    padding: 0;
+}
+
+#signup #part_form input:invalid {
+    box-shadow:none;
+}
+
+#signup #part_form select {
+    font-size: 12px;
+    height: 20px;
+    padding: 0;
+}
+
+#signup #part_form input.error,
+#signup #part_form select.error {
+    border: 2px solid #960443;
+    margin: -2px 0 0 -2px;
+}
+
+#signup #part_form li#gender.error {
+    margin-left: -2px;
+}
+
+#signup #part_form form {
+    position: relative;
+}
+
+#signup #part_form form ul li {
+    min-height: 36px;
+    line-height: 36px;
+}
+
+/*
+        @Step 1
+-------------------------------------------------------- */
+
+#signup #part_form .form-top {
+    float: left;
+    width: 337px;
+}
+
+#signup #part_form #notice {
+    color: #817676;
+}
+
+#signup #part_form aside {
+    margin-top: 17px;
+}
+
+#signup #part_form aside p {
+    font-size: 11px;
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+#signup #part_form aside .fb_button {
+    background: #4060a1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4060a1 0%, #3b5897 50%, #35508d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4060a1), color-stop(50%,#3b5897), color-stop(100%,#35508d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4060a1 0%,#3b5897 50%,#35508d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4060a1 0%,#3b5897 50%,#35508d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4060a1 0%,#3b5897 50%,#35508d 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4060a1 0%,#3b5897 50%,#35508d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4060a1', endColorstr='#35508d',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 0 5px #333;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 5px 8px 5px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+#signup #part_form aside .fb_button img {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+#signup #part_form .separator {
+    margin: 12px 0 0;
+    text-align: center;
+    width: 316px;
+}
+
+#signup #part_form .separator .line {
+    background-color: #4b4b4b;
+    display: inline-block;
+    height: 1px;
+    width: 137px;
+    margin: 4px 0;
+}
+
+#signup #part_form .separator .text {
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #7d7d7d;
+}
+
+#signup #part_form #part1 form ul {
+    margin-bottom: 5px;
+    width: 203px;
+}
+
+#signup #part_form #part1 form ul select {
+    *margin-left:5px; /* IE7 */
+}
+
+#signup #part_form #part1 form #gender label {
+    margin: 0 10px 0 4px;
+}
+
+#signup #part_form #part1 form #zipcode input {
+    width: 88px;
+}
+
+#signup #part_form #part1 form .join {
+    display: inline-block;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+#signup #part_form #part1 form .join a {
+    font-weight: bold;
+}
+
+#signup #part_form #part1 form .join a:hover {
+    text-decoration: underline;
+}
+
+#signup #part_form #part1 #already_member {
+    background: url("../images/signup_background_bottom.png");
+    border-top: 1px solid #4f4747;
+    bottom: 0;
+    height: 32px;
+    line-height: 32px;
+    left: 0;
+    padding-left: 30px;
+    position: absolute;
+    vertical-align: middle;
+    width: 337px;
+}
+
+#signup #part_form #part1 #already_member img {
+    margin-right: 5px;
+}
+#signup #part_form #part1 #already_member a {
+    font-weight: bold;
+}
+
+#signup #part_form #part1 #already_member a:hover {
+    text-decoration: underline;
+}
+
+#signup #part_form #part1 #submit {
+    box-shadow: none;
+}
+#signup #part_form #part2 #submit {
+    box-shadow: none;
+}
+
+#signup #part_form #part1 form .join input {
+    float: left;
+    margin-right: 10px;
+}
+
+#signup #part_form #part1 form .join label {
+    float: left;
+    width: 290px;
+    line-height: 13px;
+}
+
+/*
+        @Step 2
+-------------------------------------------------------- */
+#signup #part_form #part2 {
+    margin-top: 50px;
+}
+
+#signup #part_form #part2 form {
+    padding-right: 30px;
+}
+
+#signup #part_form #part2 #knowus {
+    padding-bottom: 10px;
+}
+
+#signup #part_form #part2 #knowus select {
+    width: 215px;
+}
+
+#signup #part_form #part2 #sponsor {
+    display: none;
+}
+
+#signup #part_form #part2 #sponsor div {
+    border: 1px solid #4f4747;
+    line-height: normal;
+    font-size: 11px;
+    margin-bottom: 5px;
+    padding: 10px 12px;
+}
+
+#signup #part_form #part2 #sponsor p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#signup #part_form #part2 #address {
+    padding-top: 5px;
+}
+
+#signup #part_form #part2 #birthdate input {
+    width: 120px;
+}
+
+#signup #part_form #part2 form #partners {
+    font-size: 11px;
+    padding-top: 15px;
+}
+
+#signup #part_form #part2 form #partners input {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+#signup #part_form #part2 form #partners label {
+    float: left;
+    width: 285px;
+}
